@@ -1,0 +1,18 @@
+LAB_REPORT_NOTES
+
+Block equivalents to your Simulink design:
+- Sine components: delta/theta/sigma rhythms used in sleep staging.
+- Noise: electrode + biological background + environment.
+- Summation: scalp electrode records a mixture of sources.
+- Amplify (GAIN): models the EEG instrumentation amplifier/preamplifier stage.
+- High-pass (0.5 Hz): removes drift/electrode polarization.
+- Low-pass (40 Hz): reduces EMG and high-frequency noise.
+- Band-pass filters: isolate sleep bands for feature extraction.
+- PSD and spectrogram: frequency-domain views used in sleep analysis.
+
+Suggested report figures:
+1) Raw EEG (uV) vs time
+2) After gain + HP/LP vs time
+3) Delta/theta/sigma band outputs vs time
+4) PSD before and after filtering
+5) Spectrogram of the processed signal
