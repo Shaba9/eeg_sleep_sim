@@ -1,0 +1,22 @@
+
+io:
+  output_dir: outputs
+  channel_include: []
+
+filter:
+  bandpass:
+    low_hz: 0.5
+    high_hz: 40.0
+  notch_hz: 60.0
+  resample_hz: null
+
+analysis:
+  window_sec: 4.0
+  overlap: 0.5
+  spectrogram_channel: 0
+  bands:
+    delta: [0.5, 4]
+    theta: [4, 8]
+    alpha: [8, 12]
+    beta:  [12, 30]
+    gamma: [30, 45]

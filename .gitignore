@@ -1,0 +1,5 @@
+# Ignore everything in /data
+software-sim/data/*
+
+# But keep the directory placeholder
+!data/.gitkeep
