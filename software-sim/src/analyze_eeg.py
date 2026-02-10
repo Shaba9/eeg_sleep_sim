@@ -49,7 +49,7 @@ def bandpower_from_psd(f, pxx, band):
     mask = (f >= lo) & (f < hi)
     if not np.any(mask):
         return np.nan
-    return np.trapz(pxx[mask], f[mask])
+    return np.trapezoid(pxx[mask], f[mask])
 
 # -------------------------
 # Main
